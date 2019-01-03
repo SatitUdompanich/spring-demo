@@ -19,7 +19,7 @@
     
     -->
     <bean id="myFortuneService"
- 		class="mixima.springdemo.HappyFortuneService">	 		
+ 		class="mixima.springdemo.RandomFortuneService">	 		
  	</bean>
     
  	<bean id="myCoach"
