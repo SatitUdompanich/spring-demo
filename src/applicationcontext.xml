@@ -7,6 +7,7 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<context:property-placeholder location="classpath:sport.properties"/>
 	
     <!-- Define your beans here -->
     <bean id="myLoggerConfig" class="mixima.springdemo.MyLoggerConfig" init-method="initLogger">
@@ -29,8 +30,8 @@
  	<bean id="myDynamicCoach"
  		class="mixima.springdemo.GameCoach">	
  		<property name="fortuneService" ref="myFortuneService"></property> 		
- 		<property name="email" value="123@007mail.com"></property> 	
- 		<property name="team" value=""></property> 	
+ 		<property name="email" value="${email}"></property> 	
+ 		<property name="team" value="${team}"></property> 	
  	</bean>
 
     <!--
